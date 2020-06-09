@@ -1,0 +1,17 @@
+.element__button-like{
+  width: 21px;
+  min-width: 21px;
+  height: 19px;
+  background: url(../../../images/like.svg) center no-repeat;
+  /* background-color: transparent; */
+  border: none;
+  padding: 0;
+
+  margin: auto 0;
+  
+
+}
+
+.element__button-like:focus {
+  outline-color: transparent;
+  }

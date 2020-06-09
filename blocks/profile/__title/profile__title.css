@@ -1,0 +1,15 @@
+.profile__title {
+  display: flex;
+  margin-bottom: 16px;
+  /* max-width: calc(100% - 150px);
+  width: calc(100% - 150px); */
+  /* max-width: 100%;  */
+}
+
+
+@media screen and (max-width: 1023px) {
+  .profile__title {
+  justify-content: center;
+  margin-bottom: 14px;
+  }
+}
