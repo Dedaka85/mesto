@@ -12,4 +12,17 @@
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 18px;
+  margin-bottom: 36px;
+  border: none;
+}
+
+
+@media screen and (max-width: 639px) {
+  .popup__button {
+   max-width: 250px;
+  }
+}
+.popup__button:hover {
+  opacity: 0.8;
 }

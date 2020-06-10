@@ -10,40 +10,22 @@
 
 <body class="body">
   <div class="page">
-    <!-- <div class="popup">
-      <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
-        <h3 class="popup__title">Редактировать профиль</h3>
-        <form class="popup__form" name="profile" novalidate>
-          <div class="input-container">
-            <input type="text" name="username" class="popup__input popup__input_type_text" required placeholder="Имя">
-            <span id="error-username" class="error-message"></span>
-          </div>
-          <div class="input-container">
-            <input type="text" name="userinfo" class="popup__input popup__input_type_userinfo" required placeholder="О себе">
-            <span id="error-userinfo" class="error-message"></span>
-          </div>
-          <button class="button popup__button popup__button_edit">Сохранить</button>
-        </form>
-      </div> 
-    </div> -->
     <div class="popup">
       <div class="popup__container">
-        
         <!-- <img src="./images/CloseIcon.svg" alt="" class="popup__close"> -->
         <div class="popup__close"></div>
         <h3 class="popup__title">Редактировать профиль</h3>
-        
-        <input type="text" name="username" class="popup__input" required placeholder="Имя">
-        <input type="text" name="userinfo" class="popup__input" required placeholder="О себе">
-        <button class="button popup__button">Сохранить</button>
-
+        <form class="popup__form" name="profile" novalidate>
+          <input type="text" name="username" class="popup__input" required placeholder="Имя">
+          <input type="text" name="userinfo" class="popup__input" required placeholder="О себе">
+          <button class="button popup__button">Сохранить</button>
+        </form>
       </div>>
     </div>
     <header class="header">
-      <img class="header__logo" src="images/logo.svg" alt="Логотип Место"> 
+      <img class="header__logo" src="images/logo.svg" alt="Логотип Место">
     </header>
-     <section class="profile">
+    <section class="profile">
       <div class="profile__avatar"></div>
 
       <div class="profile__content">
@@ -59,20 +41,11 @@
 
         <button class="button profile__button-add"></button>
       </div>
-    </section> 
+    </section>
 
-    <section class="elements"> 
+    <section class="elements">
       <div class="element">
-        <div class="element__image"></div>
-        <div class="element__info">
-          <p class="element__title">Карачаевс</p>
-          <button class="button element__button-like">
-          </button>
-        </div>
-      </div>
-
-       <div class="element">
-        <div class="element__image"></div>
+        <div class="element__image element__image_name_kar"></div>
         <div class="element__info">
           <p class="element__title">Карачаевск</p>
           <button class="button element__button-like">
@@ -81,45 +54,54 @@
       </div>
 
       <div class="element">
-        <div class="element__image"></div>
+        <div class="element__image element__image_name_elb"></div>
         <div class="element__info">
-          <p class="element__title">Карачаев</p>
+          <p class="element__title">Гора Эльбрус</p>
           <button class="button element__button-like">
           </button>
         </div>
       </div>
 
       <div class="element">
-        <div class="element__image"></div>
+        <div class="element__image element__image_name_dom"></div>
         <div class="element__info">
-          <p class="element__title">Карачаевскwefewfwe</p>
+          <p class="element__title">Домбай</p>
           <button class="button element__button-like">
           </button>
         </div>
       </div>
 
       <div class="element">
-        <div class="element__image"></div>
+        <div class="element__image element__image_name_elb"></div>
         <div class="element__info">
-          <p class="element__title">Карачаевскwefewfweefwfewf</p>
+          <p class="element__title">Гора Эльбрус</p>
           <button class="button element__button-like">
           </button>
         </div>
       </div>
 
       <div class="element">
-        <div class="element__image"></div>
+        <div class="element__image element__image_name_dom"></div>
         <div class="element__info">
-          <p class="element__title">Карачаевскwefewfweefwfewf</p>
+          <p class="element__title">Домбай</p>
           <button class="button element__button-like">
           </button>
         </div>
-      </div> 
-    </section> 
+      </div>
 
-      <footer class="footer">
-        <p class="footer__text">&copy; 2020 Mesto Russia</p>
-      </footer>
+      <div class="element">
+        <div class="element__image element__image_name_kar"></div>
+        <div class="element__info">
+          <p class="element__title">Карачаево-Черкессия</p>
+          <button class="button element__button-like">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2020 Mesto Russia</p>
+    </footer>
 
   </div>
   <script src="script.js"></script>

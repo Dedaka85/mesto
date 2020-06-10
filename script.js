@@ -1,11 +1,8 @@
-const editPopup = document.querySelector('.popup');
+const editPopup = document.querySelector('.popup'); 
+const editForm = document.querySelector('.popup__form');
 const editButton = document.querySelector('.profile__button-edit');
 const saveButton = editPopup.querySelector('.popup__button');
-// editPopup.style.display = "flex";
-// console.log(editPopup.style.display);
-// editPopup.classList.toggle('.popup_is-opened');
-// editPopup.classList.add('popup_is-opened');
-console.log(editPopup.querySelector('input[name=username]'));
+
 
 //Функция заполнения данных popup
 function infoPopup(popup) {
@@ -20,8 +17,6 @@ function infoPopup(popup) {
 //Функция изменения видимости popup
 function changePopupState(popup) {
   popup.classList.toggle('popup_is-opened');
-
-
 }
 //Функция закрытия popup
 function closePopup(popup) {
@@ -37,8 +32,7 @@ function openPopup(popup, button) {
   button.addEventListener('click', function () {
     changePopupState(popup);
     infoPopup(popup);
-    aaa(saveButton);
-    // userUpdate("asadadada", "adafagag");
+    
   });
 }
 
@@ -48,28 +42,19 @@ function userUpdate(name, info) {
   document.querySelector('.profile__name').textContent = name;
   document.querySelector('.profile__profession').textContent = info;
 }
-
-
-function aaa(button) {
-  button.addEventListener('click', function(event){
-    // event.preventDefault();
-     console.log(event.target);
-    if (event.target === saveButton) {
-      console.log("1");
-      name = document.querySelector('.profile__name').textContent;
-     // info = popup.querySelector('input[name=username]').textContent;
-      
-      userUpdate(name, "1231");
-    }
-  })
-
+//Функция коллбэк для формы редактирования профиля
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  const name = editPopup.querySelector('input[name=username]').value;
+  const userInfo= editPopup.querySelector('input[name=userinfo]').value;
+  userUpdate(name, userInfo);
+  changePopupState(editPopup);
+}
+function formSubmit (form, callBack) {
+  form.addEventListener('submit', callBack);
 }
 
-// function formSubmitHandler(evt) {
-//   evt.preventDefault();
 
-// }
-
-
+formSubmit(editForm, formSubmitHandler);
 closePopup(editPopup);
 openPopup(editPopup, editButton);

@@ -10,6 +10,11 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 639px) {
+  .popup__close {
+   right: -10px;
+  }
+}
 .popup__close:hover {
   background-image: url(../../../images/CloseIconHover.png);
 }
