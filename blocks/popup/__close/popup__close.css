@@ -1,0 +1,15 @@
+.popup__close {
+  height: 41px;
+  width: 41px;
+  position: absolute;
+  object-fit: fill;
+  top: -41px;
+  right: -41px;
+  cursor: pointer;
+  background-image: url(../../../images/CloseIcon.svg);
+  background-size: cover;
+}
+
+.popup__close:hover {
+  background-image: url(../../../images/CloseIconHover.png);
+}
